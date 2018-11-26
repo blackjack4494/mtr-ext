@@ -103,7 +103,7 @@ void split_redraw(
                 name = str;
             }
             /* May be we should test name's length */
-            snprintf(newLine, sizeof(newLine), "%s %d %d %d %d %d %d new %d %d %d %d %d %d %d %d %d %d",
+            snprintf(newLine, sizeof(newLine), "%s %d %d %d %d %d %d %d %d %d %d %d %d %d",
                      name, 
 					 net_loss(at), 
 					 net_returned(at), 
@@ -112,16 +112,16 @@ void split_redraw(
 					 net_avg(at) / 1000,
                      net_worst(at) / 1000,
 					 /* new values */
-					 net_err(at),
-					 net_drop(at),
-					 net_last(at),
-					 net_gmean(at),
-					 net_stdev(at),
-					 net_jitter(at),
-					 net_jworst(at),
-					 net_javg(at),
-					 net_jint(at),
-					 net_up(at)					 
+					 //net_err(at),
+					 //net_drop(at),
+					 net_last(at) / 1000,
+					 net_gmean(at) / 1000,
+					 net_stdev(at) / 1000,
+					 net_jitter(at) / 1000,
+					 net_jworst(at) / 1000,
+					 net_javg(at) / 1000,
+					 net_jinta(at) / 1000,
+					 //net_up(at)					 
 					 );
         } else {
             snprintf(newLine, sizeof(newLine), "???");
