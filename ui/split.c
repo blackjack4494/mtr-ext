@@ -103,22 +103,22 @@ void split_redraw(
                 name = str;
             }
             /* May be we should test name's length */
-            snprintf(newLine, sizeof(newLine), "%s %d %d %d %d %d %d %d %d %d %d %d %d %d %s",
-                     name, 
-					 net_loss(at), 
-					 net_returned(at), 
+            snprintf(newLine, sizeof(newLine), "%s %d %d %d %d %d %d %d %d %d %d %d %d %d", //%s
+                     name,
+					 net_loss(at),
+					 net_returned(at),
 					 net_xmit(at),
 					 net_last(at) / 1000,
 					 net_avg(at) / 1000,
-                     net_best(at) / 1000,					 
+                     net_best(at) / 1000,
                      net_worst(at) / 1000,
 					 net_stdev(at) / 1000,
 					 net_gmean(at) / 1000,
 					 net_jitter(at) / 1000,
 					 net_javg(at) / 1000,
 					 net_jworst(at) / 1000,
-					 net_jinta(at) / 1000,
-					 fmt_ipinfo(addr)
+					 net_jinta(at) / 1000//,
+					 //fmt_ipinfo(ctl, addr)
 					 );
         } else {
             snprintf(newLine, sizeof(newLine), "???");
