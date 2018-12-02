@@ -102,8 +102,8 @@ static void __attribute__ ((__noreturn__)) usage(FILE * out)
     fputs("\nUsage:\n", out);
     fputs(" mtr [options] hostname\n", out);
     fputs("\n", out);
-    fputs(" -F, --filename FILE        read hostname(s) from a file\n",
-          out);
+    /* fputs(" -F, --filename FILE        read hostname(s) from a file\n",
+          out); */
     fputs(" -4                         use IPv4 only\n", out);
 #ifdef ENABLE_IPV6
     fputs(" -6                         use IPv6 only\n", out);
