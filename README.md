@@ -26,6 +26,6 @@ apt install ncurses-dev
 ./configure  
 make  
 
-Sample Output
-with 'standard' setting 
-https://gist.github.com/blackjack4494/b54ccb55502a3e4d7c04c112188f4048
+Sample Output  
+with 'standard' setting  
+https://gist.github.com/blackjack4494/b54ccb55502a3e4d7c04c112188f4048  
