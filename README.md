@@ -29,3 +29,10 @@ make
 Sample Output  
 with 'standard' setting  
 https://gist.github.com/blackjack4494/b54ccb55502a3e4d7c04c112188f4048  
+
+
+Where I changed the output    
+https://github.com/blackjack4494/mtr-ext/blob/master/ui/split.c#L106-L120  
+
+What the output means  
+https://github.com/blackjack4494/mtr-ext/blob/master/ui/mtr.c#L75-L91  
