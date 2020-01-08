@@ -25,3 +25,7 @@ apt install ncurses-dev
 ./bootstrap.sh  
 ./configure  
 make  
+
+Sample Output
+with 'standard' setting 
+https://gist.github.com/blackjack4494/b54ccb55502a3e4d7c04c112188f4048
